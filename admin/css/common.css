@@ -1,0 +1,73 @@
+:root{
+    --bg-color: rgb(20,20,20);
+    --card-color: rgb(40,40,40);
+    --teal: #2ec1ac;
+    --teal_hover: #279e8c;
+}
+
+.availability-form{
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+}
+
+.btnHoverColor:hover{
+    color:black !important;
+    background-color: grey;
+}
+
+.custom-bg{
+    background-color: var(--teal) !important;
+}
+.custom-bg:hover{
+    background-color: var(--teal_hover) !important;
+}
+
+.h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+.custom-alert{
+    position:fixed;
+    top: 75px;
+    right: 10px;
+    animation: fadeOut 5s forwards;
+}
+
+#dashboard-menu{
+    position: fixed;
+    height: 100%;
+    z-index:11;
+}
+
+.sticky-top{
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width: 992px){
+    #dashboard-menu{
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+
+    #main-content{
+        margin-top: 10px;
+    }
+
+    .sticky-top{
+        position: relative;
+    }
+
+    .custom-alert{
+        top: 65px;
+    }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
