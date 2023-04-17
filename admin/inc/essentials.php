@@ -18,7 +18,7 @@ define('ROOMS_FOLDER', 'rooms/');
 define('USERS_FOLDER', 'users/');
 
 //sendgrid api key
-define('SENDGRID_API_KEY',"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");
+define('SENDGRID_API_KEY',"");
 define('SENDGRID_EMAIL',"sokkenkh12@gmail.com");
 define('SENDGRID_NAME',"Ken");
 
